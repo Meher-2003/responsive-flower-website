@@ -18,6 +18,15 @@
 .black3{
     color: #000000;
 }
+.light-black{
+    color: rgba(0, 0, 0, 0.5);
+}
+.orange{
+    color: #E95A08;
+}
+.margin{
+    margin: 120px 130px;
+}
 /* nav styles */
 
 .navbar{
@@ -44,6 +53,29 @@
     width: 100%;
 }
 
+/* banner */
+.banner{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    max-width: 1140px;
+    justify-content: space-evenly;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+.banner-sub-title{
+    font-size: 1.3rem;
+    text-align: left;
+    margin-top: 13px;
+}
+.banner img{
+    width: 390px;
+}
+
+
 /* responsive */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -51,5 +83,17 @@
     }
     .minor{
         display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin: 15px;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .banner img{
+        width: 385px;
+        overflow: hidden;
+        margin: 0%;
     }
 }
