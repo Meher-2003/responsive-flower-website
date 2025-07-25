@@ -6,7 +6,9 @@
   font-weight: 400;
   font-style: normal;
 }
-
+body{
+    overflow-x: hidden;
+}
 /* shared styles */
 
 .black1{
@@ -30,7 +32,7 @@
 .align-center{
     text-align: center;
 }
-button{
+.btn-primary{
     background-color: #E95A08;
     color: white;
     padding: 26px 50px;
@@ -160,7 +162,94 @@ ul li{
 .badge img{
     max-width: 280px;  
 }
+/* latest deals */
+.latest-deals{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.first{
+    margin-top: 130px;
+}
+.deals-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.deals-body{
+    font-size: 1.2rem;
+    margin: 16px 230px 120px;
+}
+.second{
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px)
+}
 
+.img1{
+    background-image: url(../assets/deal-bloom.png);
+}
+.img2{
+    background-image: url(../assets/deal-ana.png);
+}
+.second-img2{
+    background-image: url(../assets/deal-zabo.png);
+    
+}
+/* .img1, .img2, .second-img2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  filter: brightness(85%);
+} */
+/* .second-img1{
+    max-height: 420px;
+    height: calc( (100% - 5px)/2 )
+} */
+
+/* join section */
+.join{
+    background-image: url(../assets/news-letter-bg.png);
+    max-width: 1440px;
+    height: 533px;
+    background-size: cover;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    
+}
+.join-title{
+    margin-bottom: 23px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+}
+.input{
+  padding: 15px 300px 20px 15px;
+  margin-left: 0;
+  border: none;
+  text-align: left;
+}
+.input::placeholder {
+  text-align: left !important;
+}
+
+.btn{
+    background-color: #E95A08;
+    color: white;
+    padding: 17px 53px;
+    font-weight: 600;
+    border: none;
+}
+.something{
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+}
 
 /* responsive */
 @media screen and (max-width: 576px) {
@@ -197,13 +286,15 @@ ul li{
     }
     .plants-lover{
         flex-direction: column;
-        margin: 20px 0px  ;
+        margin: 40px 0px;
+        gap: 30px;
     }
     .plants-lover-img{
         width: 100%;
         display: flex;
         justify-content: center;
         overflow: hidden; 
+       
     }
     .plants-lover-title{
        white-space: nowrap;
@@ -212,5 +303,18 @@ ul li{
     .badge{
         display: none;
     }
-
+    .join{
+        width: 390px;
+        height: 275px;
+    }
+    .join-title{
+        white-space: nowrap;
+        font-size: 1.6rem;
+    }
+    .input{
+        padding: 8px 70px 8px 15px ;
+    }
+    .btn{
+    padding: 8px 25px;
+    }
 }
