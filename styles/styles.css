@@ -165,10 +165,10 @@ ul li{
 /* latest deals */
 .latest-deals{
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 auto 120px;
 }
 .first{
-    margin-top: 130px;
+    margin-top: 120px;
 }
 .deals-title{
     font-size: 2.8rem;
@@ -183,33 +183,71 @@ ul li{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 200px)
+    
 }
 
 .img1{
-    background-image: url(../assets/deal-bloom.png);
-}
-.img2{
-    background-image: url(../assets/deal-ana.png);
-}
-.second-img2{
-    background-image: url(../assets/deal-zabo.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)), url(../assets/deal-bloom.png);
+    height: 195px;
+    width: 360px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+    border-radius: 14px;
     
 }
-/* .img1, .img2, .second-img2 {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  filter: brightness(85%);
-} */
-/* .second-img1{
-    max-height: 420px;
-    height: calc( (100% - 5px)/2 )
-} */
+.img1 a{
+    text-decoration: underline;
+    color: inherit;
+}
+.img1-title, .img2-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.img2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)), url(../assets/deal-ana.png);
+    height: 195px;
+    width: 360px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+}
+.img2 a{
+    text-decoration: underline;
+    color: inherit;
+}
+.second-img2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)), url(../assets/deal-zabo.png);
+    width: 753px;
+    height: 413px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+}
+.second-img2 a{
+    text-decoration: underline;
+    color: inherit;
+}
+.img3-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
 
 /* join section */
 .join{
@@ -338,6 +376,24 @@ ul li{
     }
     .badge{
         display: none;
+    }
+    .second{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .deals-body{
+    margin: 16px 20px 120px;
+    }
+    .second-img2{
+        width: 360px ;
+        height: 195px;
+    }
+    .img2{
+        border-radius: 0px;
     }
     .join{
         width: 390px;
